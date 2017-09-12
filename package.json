@@ -1,7 +1,7 @@
 {
-  "name": "startbootstrap-sb-admin-2",
-  "title": "SB Admin 2",
-  "version": "3.3.7+1",
+  "name": "startbootstrap-sb-admin-2-bs4",
+  "title": "SB Admin 2 Bootstrap 4",
+  "version": "4.0.0",
   "homepage": "http://startbootstrap.com/template-overviews/sb-admin-2",
   "author": "Start Bootstrap",
   "license": {
@@ -19,6 +19,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git"
+    "url": "git://github.com/dpwilhelmsen/startbootstrap-sb-admin-2-bs4.git"
   }
 }
