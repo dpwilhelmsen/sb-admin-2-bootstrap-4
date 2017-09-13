@@ -1,24 +1,24 @@
 {
-  "name": "startbootstrap-sb-admin-2-bs4",
-  "title": "SB Admin 2 Bootstrap 4",
+  "name": "sb-admin-2-bootstrap-4",
+  "title": "SB Admin 2 for Bootstrap 4",
   "version": "4.0.0",
-  "homepage": "http://startbootstrap.com/template-overviews/sb-admin-2",
-  "author": "Start Bootstrap",
+  "homepage": "http://github.com/dpwilhelmsen/sb-admin-2-bootstrap-4",
+  "author": "Daniel Wilhelmsen",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    "url": "https://github.com/dpwilhelmsen/sb-admin-2-bootstrap-4/blob/master/LICENSE"
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.10",
     "gulp-header": "^1.8.7",
-    "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^1.5.4"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dpwilhelmsen/startbootstrap-sb-admin-2-bs4.git"
+    "url": "git://github.com/dpwilhelmsen/sb-admin-2-bootstrap-4.git"
   }
 }
