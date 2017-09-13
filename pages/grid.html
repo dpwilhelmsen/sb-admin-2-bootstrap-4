@@ -38,16 +38,17 @@
 <body>
 <div id="wrapper">
     <!-- Navigation -->
-    <header class="app-header navbar">
-        <div class="navbar-header">
-            <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">☰</button>
-            <a class="navbar-brand" href="#">SB Admin v2.0</a>
+    <header class="align-items-start app-header flex-column flex-md-row navbar navbar-expand-md navbar-light">
+        <div class="align-items-baseline d-flex flex-row navbar-brand p-lg-3 pl-3 pr-3 pt-3">
+            <a class="" href="#">SB Admin v2.0</a><button class="collapsed ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#side-menu-wrapper" aria-controls="side-menu" aria-expanded="false" aria-label="Toggle navigation" style="
+">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         </div>
 
-        <ul class="nav navbar-nav ml-auto flex-row navbar-top-links">
+        <ul class="nav navbar-nav ml-md-auto flex-row navbar-top-links">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button"
-                   aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-envelope fa-fw"></i>
                 </a>
                 <div class="dropdown-menu dropdown-messages dropdown-menu-right">
@@ -88,8 +89,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button"
-                   aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-tasks fa-fw"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-tasks">
@@ -100,8 +100,7 @@
                                 <span class="float-right text-muted">40% Complete</span>
                             </p>
                             <div class="progress active">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="40"
-                                     aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                                     <span class="sr-only">40% Complete (success)</span>
                                 </div>
                             </div>
@@ -115,8 +114,7 @@
                                 <span class="float-right text-muted">20% Complete</span>
                             </p>
                             <div class="progress active">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="20"
-                                     aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                     <span class="sr-only">20% Complete</span>
                                 </div>
                             </div>
@@ -130,8 +128,7 @@
                                 <span class="float-right text-muted">60% Complete</span>
                             </p>
                             <div class="progress active">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="60"
-                                     aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                     <span class="sr-only">60% Complete (warning)</span>
                                 </div>
                             </div>
@@ -145,8 +142,7 @@
                                 <span class="float-right text-muted">80% Complete</span>
                             </p>
                             <div class="progress active">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="80"
-                                     aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                     <span class="sr-only">80% Complete (danger)</span>
                                 </div>
                             </div>
@@ -160,8 +156,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button"
-                   aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-bell fa-fw"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-alerts">
@@ -207,125 +202,123 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button"
-                   aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-user fa-fw"></i>
                 </a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#"><i class="fa fa-user fa-fw"></i> User Profile</span></a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-gear fa-fw"></i> Settings</span></a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-user">
+                    <a class="dropdown-item" href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</span></a>
+                    <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                 </div>
             </li>
         </ul>
-
-        <div class="navbar-default sidebar in" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
-                <ul class="nav navbar-nav side-nav list-group" id="side-menu">
-                    <li class="sidebar-search">
-                        <div class="input-group custom-search-form">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-outline-secondary bg-white" type="button">
+    </header>
+    <div class="sidebar in" role="navigation">
+        <div class="sidebar-nav collapse navbar-collapse" id="side-menu-wrapper">
+            <ul class="nav navbar-nav navbar-collapse flex-column side-nav list-group" id="side-menu">
+                <li class="sidebar-search">
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                                <button class="btn btn-white" type="button">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </span>
-                        </div>
-                        <!-- /input-group -->
-                    </li>
-                    <li class="list-group-item">
-                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
-                        <ul class="nav-second-level list-group nested">
-                            <li class="list-group-item">
-                                <a href="flot.html">Flot Charts</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="morris.html">Morris.js Charts</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <li class="list-group-item">
-                        <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                        <ul class="nav-second-level list-group nested">
-                            <li class="list-group-item">
-                                <a href="panels-wells.html">Panels and Wells</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="buttons.html">Buttons</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="notifications.html">Notifications</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="typography.html">Typography</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="icons.html"> Icons</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="grid.html">Grid</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                        <ul class="nav-second-level list-group nested">
-                            <li class="list-group-item">
-                                <a href="#">Second Level Item</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Second Level Item</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Third Level <span class="fa arrow"></span></a>
-                                <ul class="nav-third-level list-group nested">
-                                    <li class="list-group-item">
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-third-level -->
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                        <ul class="nav-second-level list-group nested">
-                            <li class="list-group-item">
-                                <a href="blank.html">Blank Page</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="login.html">Login Page</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                </ul>
-            </div>
-            <!-- /.sidebar-collapse -->
+                    </div>
+                    <!-- /input-group -->
+                </li>
+                <li class="list-group-item">
+                    <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                    <ul class="nav-second-level list-group nested">
+                        <li class="list-group-item">
+                            <a href="flot.html">Flot Charts</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="morris.html">Morris.js Charts</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="list-group-item">
+                    <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                    <ul class="nav-second-level list-group nested">
+                        <li class="list-group-item">
+                            <a href="cards.html">Cards</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="buttons.html">Buttons</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="notifications.html">Notifications</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="typography.html">Typography</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="icons.html"> Icons</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="grid.html">Grid</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="list-group-item">
+                    <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                    <ul class="nav-second-level list-group nested">
+                        <li class="list-group-item">
+                            <a href="#">Second Level Item</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Second Level Item</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Third Level <span class="fa arrow"></span></a>
+                            <ul class="nav-third-level list-group nested">
+                                <li class="list-group-item">
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-third-level -->
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="list-group-item">
+                    <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                    <ul class="nav-second-level list-group nested">
+                        <li class="list-group-item">
+                            <a href="blank.html">Blank Page</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="login.html">Login Page</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+            </ul>
         </div>
-    </header>
+        <!-- /.sidebar-collapse -->
+    </div>
 
     <div id="page-wrapper">
         <div class="row">
@@ -340,82 +333,73 @@
                 <div class="card">
                     <div class="card-body">
                         <h3>Grid options</h3>
-                        <p>See how aspects of the Bootstrap grid system work across multiple devices
-                            with a handy table.</p>
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-striped">
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Extra small devices <small>Phones (&lt;768px)</small>
-                                    </th>
-                                    <th>Small devices <small>Tablets (&#x2265;768px)</small>
-                                    </th>
-                                    <th>Medium devices <small>Desktops (&#x2265;992px)</small>
-                                    </th>
-                                    <th>Large devices <small>Desktops (&#x2265;1200px)</small>
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th>Grid behavior</th>
-                                    <td>Horizontal at all times</td>
-                                    <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
-                                </tr>
-                                <tr>
-                                    <th>Max container width</th>
-                                    <td>None (auto)</td>
-                                    <td>750px</td>
-                                    <td>970px</td>
-                                    <td>1170px</td>
-                                </tr>
-                                <tr>
-                                    <th>Class prefix</th>
-                                    <td> <code>.col-xs-</code>
-                                    </td>
-                                    <td> <code>.col-sm-</code>
-                                    </td>
-                                    <td> <code>.col-md-</code>
-                                    </td>
-                                    <td> <code>.col-lg-</code>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th># of columns</th>
-                                    <td colspan="4">12</td>
-                                </tr>
-                                <tr>
-                                    <th>Max column width</th>
-                                    <td class="text-muted">Auto</td>
-                                    <td>60px</td>
-                                    <td>78px</td>
-                                    <td>95px</td>
-                                </tr>
-                                <tr>
-                                    <th>Gutter width</th>
-                                    <td colspan="4">30px (15px on each side of a column)</td>
-                                </tr>
-                                <tr>
-                                    <th>Nestable</th>
-                                    <td colspan="4">Yes</td>
-                                </tr>
-                                <tr>
-                                    <th>Offsets</th>
-                                    <td colspan="4">Yes</td>
-                                </tr>
-                                <tr>
-                                    <th>Column ordering</th>
-                                    <td colspan="4">Yes</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p>Grid classes apply to devices with screen widths greater than or equal
-                            to the breakpoint sizes, and override grid classes targeted at smaller
-                            devices. Therefore, applying any <code>.col-md-</code> class to an element
-                            will not only affect its styling on medium devices but also on large devices
-                            if a <code>.col-lg-</code> class is not present.</p>
+                        <p>While Bootstrap uses <code class="highlighter-rouge">em</code>s or
+                            <code class="highlighter-rouge">rem</code>s for defining most sizes,
+                            <code class="highlighter-rouge">px</code>s are used for grid breakpoints and container
+                            widths. This is because the viewport width is in pixels and does not change with the
+                            <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>.</p>
+                        <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+                        <table class="table table-bordered table-striped table-responsive">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th class="text-center">
+                                    Extra small<br>
+                                    <small>&lt;576px</small>
+                                </th>
+                                <th class="text-center">
+                                    Small<br>
+                                    <small>≥576px</small>
+                                </th>
+                                <th class="text-center">
+                                    Medium<br>
+                                    <small>≥768px</small>
+                                </th>
+                                <th class="text-center">
+                                    Large<br>
+                                    <small>≥992px</small>
+                                </th>
+                                <th class="text-center">
+                                    Extra large<br>
+                                    <small>≥1200px</small>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th class="text-nowrap" scope="row">Max container width</th>
+                                <td>None (auto)</td>
+                                <td>540px</td>
+                                <td>720px</td>
+                                <td>960px</td>
+                                <td>1140px</td>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap" scope="row">Class prefix</th>
+                                <td><code>.col-</code></td>
+                                <td><code>.col-sm-</code></td>
+                                <td><code>.col-md-</code></td>
+                                <td><code>.col-lg-</code></td>
+                                <td><code>.col-xl-</code></td>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap" scope="row"># of columns</th>
+                                <td colspan="5">12</td>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap" scope="row">Gutter width</th>
+                                <td colspan="5">30px (15px on each side of a column)</td>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap" scope="row">Nestable</th>
+                                <td colspan="5">Yes</td>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap" scope="row">Column ordering</th>
+                                <td colspan="5">Yes</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -427,37 +411,19 @@
                 <div class="card">
                     <div class="card-body">
                         <h3>Example: Stacked-to-horizontal</h3>
-                        <p>Using a single set of <code>.col-md-*</code> grid classes, you can create
-                            a default grid system that starts out stacked on mobile devices and tablet
-                            devices (the extra small to small range) before becoming horizontal on
-                            desktop (medium) devices. Place grid columns in any <code>.row</code>.</p>
-                        <div
-                                class="row show-grid">
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                            <div class="col-lg-1">.col-lg-1</div>
-                        </div>
-                        <div class="row show-grid">
-                            <div class="col-lg-8">.col-lg-8</div>
-                            <div class="col-lg-4">.col-lg-4</div>
-                        </div>
-                        <div class="row show-grid">
-                            <div class="col-lg-4">.col-lg-4</div>
-                            <div class="col-lg-4">.col-lg-4</div>
-                            <div class="col-lg-4">.col-lg-4</div>
-                        </div>
-                        <div class="row show-grid">
-                            <div class="col-lg-6">.col-lg-6</div>
-                            <div class="col-lg-6">.col-lg-6</div>
+                        <p>Using a single set of <code class="highlighter-rouge">.col-sm-*</code> classes,
+                            you can create a basic grid system that starts out stacked on extra small devices
+                            before becoming horizontal on desktop (medium) devices.</p>
+                        <div class="bd-example" data-example-id="">
+                            <div class="row show-grid">
+                                <div class="col-sm-8">col-sm-8</div>
+                                <div class="col-sm-4">col-sm-4</div>
+                            </div>
+                            <div class="row show-grid">
+                                <div class="col-sm">col-sm</div>
+                                <div class="col-sm">col-sm</div>
+                                <div class="col-sm">col-sm</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -469,25 +435,30 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body">
-                        <h3>Example: Mobile and desktop</h3>
-                        <p>Don&apos;t want your columns to simply stack in smaller devices? Use the
-                            extra small and medium device grid classes by adding <code>.col-xs-*</code>
-                            <code>.col-md-*</code> to
-                            your columns. See the example below for a better idea of how it all works.</p>
-                        <div
-                                class="row show-grid">
-                            <div class="col-12 col-lg-8">.col-12 .col-lg-8</div>
-                            <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
-                        </div>
-                        <div class="row show-grid">
-                            <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
-                            <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
-                            <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
-                        </div>
-                        <div class="row show-grid">
-                            <div class="col-6">.col-6</div>
-                            <div class="col-6">.col-6</div>
-                        </div>
+                        <h3>Example: Mix and match</h3>
+                        <p>Don’t want your columns to simply stack in some grid tiers? Use a combination of different
+                            classes for each tier as needed. See the example below for a better idea of how it all works.</p>
+
+                            <div class="bd-example" data-example-id="">
+                                <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                                <div class="row show-grid">
+                                    <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+                                    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                                </div>
+
+                                <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                                <div class="row show-grid">
+                                    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                                    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                                    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                                </div>
+
+                                <!-- Columns are always 50% wide, on mobile and desktop -->
+                                <div class="row show-grid">
+                                    <div class="col-6">.col-6</div>
+                                    <div class="col-6">.col-6</div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -498,47 +469,23 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body">
-                        <h3>Example: Mobile, tablet, desktops</h3>
-                        <p>Build on the previous example by creating even more dynamic and powerful
-                            layouts with tablet <code>.col-sm-*</code> classes.</p>
-                        <div class="row show-grid">
-                            <div class="col-12 col-md-6 col-lg-8">.col-12 .col-md-6 .col-lg-8</div>
-                            <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
-                        </div>
-                        <div class="row show-grid">
-                            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                            <!-- Optional: clear the XS cols if their content
-                            doesn't match in height -->
-                            <div class="clearfix d-block d-sm-none"></div>
-                            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-xl-12 -->
-        </div>
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 id="grid-responsive-resets">Responsive column resets</h3>
-                        <p>With the four tiers of grids available you&apos;re bound to run into issues
-                            where, at certain breakpoints, your columns don&apos;t clear quite right
-                            as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and
-                            our <a href="#responsive-utilities">responsive utility classes</a>.</p>
-                        <div
-                                class="row show-grid">
-                            <div class="col-6 col-md-3">.col-6 .col-md-3
-                                <br>Resize your viewport or check it out on your phone for an example.</div>
-                            <div
-                                    class="col-6 col-md-3">.col-6 .col-md-3</div>
-                            <!-- Add the extra clearfix for only the required
-                            viewport -->
-                            <div class="clearfix d-block d-sm-none"></div>
-                            <div class="col-6 col-md-3">.col-6 .col-md-3</div>
-                            <div class="col-6 col-md-3">.col-6 .col-md-3</div>
+                        <h3 id="grid-responsive-resets">Column resets</h3>
+                        <p>With the handful of grid tiers available, you’re bound to run into issues where,
+                            at certain breakpoints, your columns don’t clear quite right as one is taller than
+                            the other. To fix that, use a combination of a
+                            <code class="highlighter-rouge">.clearfix</code> and
+                            our <a href="/docs/4.0/utilities/display/">responsive display utilities</a>.</p>
+                        <div class="bd-example" data-example-id="">
+                            <div class="row show-grid">
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+                                <!-- Add the extra clearfix for only the required viewport -->
+                                <div class="clearfix d-none d-sm-block"></div>
+
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -551,20 +498,22 @@
                 <div class="card">
                     <div class="card-body">
                         <h3 id="grid-offsetting">Offsetting columns</h3>
-                        <p>Move columns to the right using <code>.col-md-offset-*</code> classes. These
-                            classes increase the left margin of a column by <code>*</code> columns. For
-                            example, <code>.mx-md-auto</code> moves <code>.col-lg-4</code> over four columns.</p>
-                        <div
-                                class="row show-grid">
-                            <div class="col-lg-4">.col-lg-4</div>
-                            <div class="col-lg-4 mx-md-auto">.col-lg-4 .mx-md-auto</div>
-                        </div>
-                        <div class="row show-grid">
-                            <div class="col-lg-3 mx-md-auto">.col-lg-3 .mx-md-auto</div>
-                            <div class="col-lg-3 mx-md-auto">.col-lg-3 .mx-md-auto</div>
-                        </div>
-                        <div class="row show-grid">
-                            <div class="col-lg-6 mx-md-auto">.col-lg-6 .mx-md-auto</div>
+                        <p>With the move to flexbox in v4, we no longer have v3’s style of offset classes. Instead,
+                            use margin utilities like <code class="highlighter-rouge">.mr-auto</code> to force sibling
+                            columns away from one another.</p>
+                        <div class="bd-example" data-example-id="">
+                            <div class="row show-grid">
+                                <div class="col-md-4">.col-md-4</div>
+                                <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+                            </div>
+                            <div class="row show-grid">
+                                <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+                                <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+                            </div>
+                            <div class="row show-grid">
+                                <div class="col-auto mr-auto">.col-auto .mr-auto</div>
+                                <div class="col-auto">.col-auto</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -576,16 +525,25 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body">
-                        <h3 id="grid-nesting">Nesting columns</h3>
-                        <p>To nest your content with the default grid, add a new <code>.row</code> and
-                            set of <code>.col-md-*</code> columns within an existing <code>.col-md-*</code> column.
-                            Nested rows should include a set of columns that add up to 12.</p>
-                        <div
-                                class="row show-grid">
-                            <div class="col-lg-9">Level 1: .col-lg-9
-                                <div class="row show-grid">
-                                    <div class="col-lg-6">Level 2: .col-lg-6</div>
-                                    <div class="col-lg-6">Level 2: .col-lg-6</div>
+                        <h3 id="grid-nesting">Nesting</h3>
+                        <p>To nest your content with the default grid, add a new
+                            <code class="highlighter-rouge">.row</code> and set of
+                            <code class="highlighter-rouge">.col-sm-*</code> columns within an existing
+                            <code class="highlighter-rouge">.col-sm-*</code> column. Nested rows should include a set
+                            of columns that add up to 12 or fewer (it is not required that you use all 12
+                            available columns).</p>
+                        <div class="bd-example" data-example-id="">
+                            <div class="row show-grid">
+                                <div class="col-sm-9">
+                                    Level 1: .col-sm-9
+                                    <div class="row">
+                                        <div class="col-8 col-sm-6">
+                                            Level 2: .col-8 .col-sm-6
+                                        </div>
+                                        <div class="col-4 col-sm-6">
+                                            Level 2: .col-4 .col-sm-6
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -599,12 +557,27 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body">
-                        <h3 id="grid-column-ordering">Column ordering</h3>
-                        <p>Easily change the order of our built-in grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> modifier
-                            classes.</p>
-                        <div class="row show-grid">
-                            <div class="col-lg-9 order-md-2">.col-lg-9 .order-md-2</div>
-                            <div class="col-lg-3 order-md-1">.col-lg-3 .order-md-1</div>
+                        <h3 id="grid-column-ordering">Flex Order</h3>
+                        <p>Use <code class="highlighter-rouge">.order-</code> classes for controlling the
+                            <strong>visual order</strong> of your content. These classes are responsive, so you can
+                            set the <code class="highlighter-rouge">order</code> by breakpoint (e.g.,
+                            <code class="highlighter-rouge">.order-1.order-md-2</code>). Includes support for
+                            <code class="highlighter-rouge">1</code> through <code class="highlighter-rouge">12</code>
+                            across all five grid tiers.</p>
+                        <div class="bd-example" data-example-id="">
+                            <div class="container">
+                                <div class="row show-grid">
+                                    <div class="col">
+                                        First, but unordered
+                                    </div>
+                                    <div class="col order-12">
+                                        Second, but last
+                                    </div>
+                                    <div class="col order-1">
+                                        Third, but first
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
