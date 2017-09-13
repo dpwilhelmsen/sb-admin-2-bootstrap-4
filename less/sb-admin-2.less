@@ -86,12 +86,11 @@ a {
   padding: 0 15px;
   min-height: 568px;
   background-color: white;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   #page-wrapper {
-    position: inherit;
-    margin: 0 0 0 250px;
     padding: 0 30px;
     border-left: 1px solid darken(@gray-lightest, 6.5%);
   }
@@ -293,12 +292,7 @@ a {
 
 @media (min-width: 768px) {
   .sidebar {
-    z-index: 1;
-    position: absolute;
-    width: 250px;
-    margin-top: 51px;
-    top:0;
-    left:0;
+    min-width: 250px;
   }
 
   .navbar-nav.navbar-top-links .dropdown-messages,
@@ -406,18 +400,23 @@ table.dataTable thead .sorting_desc,
 table.dataTable thead .sorting_asc_disabled,
 table.dataTable thead .sorting_desc_disabled {
   background: transparent;
+  &:before {
+    display:none;
+  }
 }
 
 table.dataTable thead .sorting_asc:after {
   content: "\f0de";
   float: right;
   font-family: fontawesome;
+  opacity:1;
 }
 
 table.dataTable thead .sorting_desc:after {
   content: "\f0dd";
   float: right;
   font-family: fontawesome;
+  opacity:1;
 }
 
 table.dataTable thead .sorting:after {

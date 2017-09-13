@@ -72,11 +72,10 @@ a:focus {
   padding: 0 15px;
   min-height: 568px;
   background-color: white;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #page-wrapper {
-    position: inherit;
-    margin: 0 0 0 250px;
     padding: 0 30px;
     border-left: 1px solid #e7e7e7;
   }
@@ -239,12 +238,7 @@ a:focus {
 }
 @media (min-width: 768px) {
   .sidebar {
-    z-index: 1;
-    position: absolute;
-    width: 250px;
-    margin-top: 51px;
-    top: 0;
-    left: 0;
+    min-width: 250px;
   }
   .navbar-nav.navbar-top-links .dropdown-messages,
   .navbar-nav.navbar-top-links .dropdown-tasks,
@@ -324,15 +318,24 @@ table.dataTable thead .sorting_asc_disabled,
 table.dataTable thead .sorting_desc_disabled {
   background: transparent;
 }
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before {
+  display: none;
+}
 table.dataTable thead .sorting_asc:after {
   content: "\f0de";
   float: right;
   font-family: fontawesome;
+  opacity: 1;
 }
 table.dataTable thead .sorting_desc:after {
   content: "\f0dd";
   float: right;
   font-family: fontawesome;
+  opacity: 1;
 }
 table.dataTable thead .sorting:after {
   content: "\f0dc";
