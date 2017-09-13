@@ -26,6 +26,20 @@ a.list-group-item, button.list-group-item {
   color: #555;
 }
 
+.btn-outline-secondary.bg-white,
+.btn-outline-secondary.bg-white.dropdown-toggle {
+  color: #333;
+  &:hover {
+    color: #333;
+  }
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
 // Wrappers
 
 #wrapper {
@@ -174,6 +188,10 @@ a.list-group-item, button.list-group-item {
          background-color: @gray-lighter;
        }
     }
+
+    a.active {
+      background-color: @gray-lighter;
+    }
   }
 
   .nested {
@@ -183,6 +201,9 @@ a.list-group-item, button.list-group-item {
     &.collapse {
       display:none;
       width:100%;
+      &.in {
+        display:block;
+      }
     }
     &.collapse.show {
       display:block;
@@ -221,6 +242,8 @@ a.list-group-item, button.list-group-item {
     position: absolute;
     width: 250px;
     margin-top: 51px;
+    top:0;
+    left:0;
   }
 
   .navbar-nav.navbar-top-links .dropdown-messages,
